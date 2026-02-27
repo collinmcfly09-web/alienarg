@@ -1,0 +1,31 @@
+let signalLevel = 0;
+
+const scanBtn = document.getElementById("scanBtn");
+
+scanBtn.addEventListener("click", increaseSignal);
+
+function increaseSignal() {
+  if (signalLevel < 100) {
+    signalLevel += 10;
+  }
+
+  document.getElementById("signalFill").style.width =
+    signalLevel + "%";
+
+  if (signalLevel === 50) {
+    document.getElementById("status").innerText =
+      "Status: Interference Detected";
+  }
+
+  if (signalLevel === 80) {
+    document.getElementById("hiddenMessage").innerText =
+      "they are listening";
+  }
+
+  if (signalLevel === 100) {
+    document.getElementById("status").innerText =
+      "Status: SIGNAL LOCKED";
+
+    document.body.style.backgroundColor = "#001100";
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Space Signal Monitor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Deep Space Signal Monitor</h1>
+    <p id="status">Status: Stable</p>
+
+    <button id="scanBtn">Scan Sector</button>
+
+    <div id="signalBar">
+      <div id="signalFill"></div>
+    </div>
+
+    <p id="hiddenMessage"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

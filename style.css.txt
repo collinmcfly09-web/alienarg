@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+  color: lime;
+  font-family: monospace;
+  text-align: center;
+  padding-top: 60px;
+}
+
+button {
+  background: black;
+  color: lime;
+  border: 1px solid lime;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: lime;
+  color: black;
+}
+
+#signalBar {
+  width: 300px;
+  height: 20px;
+  border: 1px solid lime;
+  margin: 30px auto;
+}
+
+#signalFill {
+  height: 100%;
+  width: 0%;
+  background-color: lime;
+  transition: width 0.4s;
+}
